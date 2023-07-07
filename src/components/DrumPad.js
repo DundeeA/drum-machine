@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 
 const DrumPad = (props) => {
   const btnRef = useRef(null);
 
+    const [isClicked, setClicked] = useState(false);
+     
+    function clicked(){
+      setClicked(true);
+      setTimeout(() => {
+        setClicked(false);
+      }, 200);
+    }
+
   return (
-    <button className="drum-pad" id={props.title} onClick={() => {btnRef.current.play(); props.setTitle(props.title);}}>
+    <button className={isClicked ? 'drum-pad clicked' : 'drum-pad'} id={props.title} onClick={() => {props.btnClick(btnRef.current, props.title); clicked()}}>
       <audio
         ref={btnRef}
         className="clip"

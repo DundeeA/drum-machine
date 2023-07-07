@@ -44,26 +44,33 @@ class DrumMachine extends React.Component {
           title: "Tsk2",
         },
       ],
-      soundTitle: ''
+      soundTitle: "",
     };
 
     this.detectKeyDown = this.detectKeyDown.bind(this);
-    this.setTitle = this.setTitle.bind(this);
+    this.buttonClick = this.buttonClick.bind(this);
   }
 
-  detectKeyDown(e) { 
+
+ 
+
+
+  /*Key presses*/
+  detectKeyDown(e) {
     const keyPressed = String(e.key).toUpperCase();
     if (this.state.controlKeys.includes(keyPressed)) {
-      document.getElementById(keyPressed).play();
+      document.getElementById(keyPressed).parentNode.click();
     }
   }
 
-
-  setTitle(title){
+  
+   buttonClick(clip , title){
+    clip.play();
     this.setState({
-       soundTitle: title
+      soundTitle: title,
     });
-  }
+   }
+ 
 
 
   componentDidMount() {
@@ -76,7 +83,7 @@ class DrumMachine extends React.Component {
         key={pad + 1}
         btn={pad}
         clip={this.state.audioClips[i].link}
-        setTitle={this.setTitle}
+        btnClick={this.buttonClick}
         title={this.state.audioClips[i].title}
       />
     ));

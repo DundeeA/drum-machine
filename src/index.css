@@ -1,0 +1,16 @@
+body{
+display: flex;
+justify-content: center;
+width: 100vw;
+}
+
+
+.drum-pad{
+  aspect-ratio: 1;
+  height: 4vw;
+  margin: 10px;
+}
+
+.clicked{
+  background-color: red;
+}
