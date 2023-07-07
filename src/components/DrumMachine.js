@@ -63,7 +63,6 @@ class DrumMachine extends React.Component {
     }
   }
 
-  
    buttonClick(clip , title){
     clip.play();
     this.setState({
@@ -71,8 +70,6 @@ class DrumMachine extends React.Component {
     });
    }
  
-
-
   componentDidMount() {
     document.addEventListener("keydown", this.detectKeyDown, true);
   }
