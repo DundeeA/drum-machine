@@ -10,7 +10,7 @@ const DrumPad = (props) => {
         ref={btnRef}
         className="clip"
         id={props.btn}
-        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+        src={props.clip}
       ></audio>
       {props.btn}
     </button>
