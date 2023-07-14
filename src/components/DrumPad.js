@@ -4,10 +4,10 @@ import { useRef } from "react";
 const DrumPad = (props) => {
   const btnRef = useRef(null);
 
-    const [isClicked, setClicked] = useState(false);
+   const [isClicked, setClicked] = useState(false);
      
     function clicked(){
-      setClicked(true);
+      setClicked(true); 
       setTimeout(() => {
         setClicked(false);
       }, 200);

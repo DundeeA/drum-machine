@@ -51,10 +51,6 @@ class DrumMachine extends React.Component {
     this.buttonClick = this.buttonClick.bind(this);
   }
 
-
- 
-
-
   /*Key presses*/
   detectKeyDown(e) {
     const keyPressed = String(e.key).toUpperCase();
