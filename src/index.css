@@ -11,7 +11,7 @@ main{
   width: 100%;
   height: 100vh;
 
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-size: cover;
   background-image: url('../public/stageImage.jpg');
 
@@ -49,7 +49,7 @@ border-radius: 4vh;
 
   background-image: url('../public/cropped-small-button_button1.webp');
   background-size: cover;
-  filter: hue-rotate(110deg);
+  filter: hue-rotate(50deg);
 }
 
 .clicked{
