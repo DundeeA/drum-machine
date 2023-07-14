@@ -19,20 +19,24 @@ main{
 
 #drum-machine{
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
 justify-content: center;
-width: 50vw;
-height: 30vh;
-
-background-color: antiquewhite;
+max-width: 100vw;
 
 border-radius: 4vh;
-border: .7vh solid #b86db6;
 }
+
+.drumpads{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 .drum-pad{
   aspect-ratio: 1;
-  height: 4vw;
+  height: 12vh;
   margin: 10px;
 
   font-size: 16px;
@@ -55,6 +59,6 @@ border: .7vh solid #b86db6;
 
 
 #display{
-  font-size: 6vw;
-  color: rgb(30, 50, 53);
+  font-size: 12vw;
+  color: rgb(255, 255, 255);
 }

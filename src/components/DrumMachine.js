@@ -44,7 +44,7 @@ class DrumMachine extends React.Component {
           title: "Tsk2",
         },
       ],
-      soundTitle: "",
+      soundTitle: "Sound",
     };
 
     this.detectKeyDown = this.detectKeyDown.bind(this);
@@ -83,7 +83,11 @@ class DrumMachine extends React.Component {
 
     return (
       <div id="drum-machine">
-        {drumPads}
+
+      <div className="drumpads">    {drumPads}  </div>
+    
+
+
         <div id="display">{this.state.soundTitle}</div>
       </div>
     );
