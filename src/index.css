@@ -13,8 +13,7 @@ main{
 
   background-repeat: no-repeat; 
   background-size: cover;
-  background-image: url('../public/stageImage.jpg');
-
+  background-color: rgba(3, 34, 634, 0.3);
 }
 
 #drum-machine{
@@ -39,15 +38,15 @@ border-radius: 4vh;
   height: 12vh;
   margin: 10px;
 
-  font-size: 16px;
+  font-size: 30px;
   text-align: center;
   cursor: pointer;
-  outline: none;
-  color: #fff;
-  border: none;
+  outline: none; 
+  color: #000000;
+  
+ 
   border-radius: 100%;
-
-  background-image: url('../public/cropped-small-button_button1.webp');
+ 
   background-size: cover;
   filter: hue-rotate(50deg);
 }
